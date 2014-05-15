@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.4'
 
 gem 'bootstrap-sass', '2.3.2.0'
+gem 'bcrypt-ruby', '3.0.1'
 gem 'sprockets', '2.11.0'
 
 # Use sqlite3 as the database for Active Record
@@ -18,6 +19,12 @@ group :test do
   gem 'capybara', '2.1.0'
 end
 
+group :development do
+  gem 'annotate', '2.5.0'
+end
+
+gem 'protected_attributes'
+gem 'devise', '3.0.0.rc'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
